@@ -7,7 +7,14 @@ body{
 a{
     text-decoration: none;
     color:black;
-}.navbar{
+}
+.text{
+    
+    font-size:1.5rem;
+    word-spacing: 4px;
+   
+}
+.navbar{
     display:flex;
     justify-content:space-between;
     padding: 1rem 3rem !important;
@@ -21,8 +28,9 @@ a{
 }
 .btn{
     margin: 2rem;
-    font-size: 2rem !important;
-    color: white !important
+    font-size: 1.5rem !important;
+    color: white !important;
+    font-weight: 600 !important;
 }
 .video-container{
     position: relative;
@@ -44,7 +52,7 @@ object-fit: cover !important;
     top: 0;
     right: 0 ;
     margin:0;
-    background: rgb(0 0 0 / 30%);
+    background: rgb(0 0 0 / 50%);
 
 }
 .container-heading{
@@ -65,7 +73,7 @@ object-fit: cover !important;
     z-index: 1000;
 }
 .container-heading-middle h1{
-font-size :9rem;
+font-size :6rem;                                            /*changes /*/
 text-align: center;
 color: white !important;
 animation-name: slideUp;
@@ -87,7 +95,7 @@ color: black !important;
 
 
 .container-heading-middle p{
-font-size :3rem;
+font-size :2rem;
 text-align: center;
 font-weight : 500;
 color: white !important;
@@ -106,7 +114,7 @@ color: white !important;
    margin: 1rem ;
    text-decoration: none;
    color:rgb(200, 200, 200);
-   font-size: 1.5rem;
+   font-size: 1.2rem;
    font-weight: 400;
 }
 .container-heading-middle{
@@ -123,32 +131,84 @@ color: white !important;
     justify-content: space-between;
     margin: 6rem auto ;
     padding:3rem;
-    max-width: 2500px;
+    max-width: 2000px;
 }
 .middle-left{
     flex:1;
-    font-size:5rem;
+    margin:1rem;
+    
 }
 .middle-left h1{
     
-    font-size:5rem;
-    margin:1rem !important;
+    font-size:3rem;
+    
 }
 .middle-right{
     flex:1;
-    font-size:2rem
-}
-.middle-right p{
+    margin:1rem;
     
-    font-size:2rem;
-    margin:1rem !important;
 }
+
 .middle-right-a{
     margin: 2rem 2rem 2rem 0!important;
+    font-size:2rem;
     text-decoration: none;
-    color:black !important;
+    color:#ffd803;
     font-weight: 700 !important
 }
+.middle2{
+    display: flex;
+    margin: 3rem auto;
+    padding: 3rem;
+    /* max-width: 2000px; */
+    align-items:center;
+    justify-content:center;
+}
+.middle2-left{
+    flex:1;
+    display:flex;
+    justify-content:flex-end;
+    margin-right: 2rem;
+    max-width:500px;
+    
+    
+    
+}
+.middle2-left>svg{
+    width:500px
+    
+}
+.middle2-right{
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    margin-left: 2rem;
+    max-width:500px;
+    
+    
+}
+.head-text{
+    letter-spacing:0.3rem
+}
+.middle2-right >h2>span{
+    color:#ffd803;
+    font-weight:600;
+    font-size:3rem;
+    font-style: italic;
+    
+
+}
+.middle2-right>button{
+    width:110px;
+    margin-top: 1rem;
+    background-color:#ffd803;
+    color:#0000009e;border-radius:5px;
+    padding:0.5rem;
+    border:none
+}
+
+
 
 .contact-us{
     display:flex;
@@ -197,29 +257,6 @@ color:white;;
 
 }
 
-@media screen and (max-width:1900px){
-    .navbar{
-        margin:0 auto;
-        
-    }
-    .container-heading-middle h1 {
-        font-size: 6rem;
-    }
-    .container-heading-middle p {
-        font-size: 2rem;
-        margin: 0;
-    }
-    .middle-left h1 {
-        font-size: 4rem;
-    }
-    .middle-right p {
-        font-size: 1.75rem;
-
-    }
-    .middle-right-a {
-        font-size: 1.5rem;
-        margin: 1rem 1rem 1rem 0!important;
-}}
 @media screen and (max-width:1300px){
     .navbar{
         margin:0 auto;
@@ -249,7 +286,7 @@ color:white;;
     .middle-left h1 {
         font-size: 3rem;
     }
-    .middle-right p {
+    .text {
         font-size: 1.5rem;
 
     }
@@ -274,20 +311,21 @@ color:white;;
     .middle-left h1 {
         font-size: 2rem;
     }
-    .middle-right p {
-        font-size: 1.2rem;
+    .text{
+        font-size: 1rem;
 
     }
     .middle-right-a {
-        font-size: 1rem;
+        font-size: 1.5rem;
         margin: 1rem 1rem 1rem 0!important;
    
 } }
 @media screen and (max-width: 830px) {
-    .video-container{
-        height: calc(100vh ) !important;
-    }
+    
     .middle-text{
+        flex-direction: column
+    }
+    .middle2{
         flex-direction: column
     }
     .navbar-left img{
@@ -300,7 +338,7 @@ color:white;;
         font-size: 2.5rem;
     }
     .container-heading-middle p {
-        font-size: 1rem;
+        font-size: 0.8rem;
         margin: 0;
     }
     .container-heading-right a {
@@ -310,8 +348,6 @@ color:white;;
     #svg{
         margin-top: 1rem;
     }
-    .navbar-left img{
-        width: 100px;height: 50px;
-    }
+    
 }
 

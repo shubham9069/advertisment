@@ -27,7 +27,7 @@ a{
 .video-container{
     position: relative;
     max-height: 1000px;
-    height:100vh
+   
 }
 #myVideo{
     height: 100%;width: 100%;

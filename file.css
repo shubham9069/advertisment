@@ -1,5 +1,5 @@
 *{
-    font-family: Ostia Antica,sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 body{
     margin: 0px !important;
@@ -10,7 +10,7 @@ a{
 }
 .text{
     
-    font-size:1.5rem;
+    font-size:1.2rem;
     word-spacing: 4px;
    
 }
@@ -19,8 +19,12 @@ a{
     justify-content:space-between;
     padding: 1rem 3rem !important;
     margin:0rem auto;
-    max-width: 2500px;
+    max-width: 2000px;
    
+}
+.heading-h1
+{
+font-size:2.5rem 
 }
 
 .navbar-left img{
@@ -28,7 +32,7 @@ a{
 }
 .btn{
     margin: 2rem;
-    font-size: 1.5rem !important;
+    font-size: 1.2rem !important;
     color: white !important;
     font-weight: 600 !important;
 }
@@ -73,12 +77,13 @@ object-fit: cover !important;
     z-index: 1000;
 }
 .container-heading-middle h1{
-font-size :6rem;                                            /*changes /*/
+font-size :5rem;                                            /*changes /*/
 text-align: center;
 color: white !important;
 animation-name: slideUp;
     animation-duration: 4s;
     animation-timing-function: ease-in;
+    font-family:Bradley Hand,cursive;
 
 
 }
@@ -95,7 +100,7 @@ color: black !important;
 
 
 .container-heading-middle p{
-font-size :2rem;
+font-size :1.5rem;
 text-align: center;
 font-weight : 500;
 color: white !important;
@@ -136,25 +141,33 @@ color: white !important;
 .middle-left{
     flex:1;
     margin:1rem;
+    position: relative;
+    
     
 }
-.middle-left h1{
-    
-    font-size:3rem;
-    
+
+.middle-left>h1>span{
+    color:#ff3ac5b8;
+    font-family:Bradley Hand,cursive;
+    font-size: 3rem;
 }
+
+
 .middle-right{
     flex:1;
     margin:1rem;
+    font-size: 1.5rem;
     
 }
+
 
 .middle-right-a{
     margin: 2rem 2rem 2rem 0!important;
     font-size:2rem;
     text-decoration: none;
-    color:#ffd803;
-    font-weight: 700 !important
+    color:#ff3ac5b8;
+    font-weight: 100 !important;
+    font-family: cursive;
 }
 .middle2{
     display: flex;
@@ -170,13 +183,26 @@ color: white !important;
     justify-content:flex-end;
     margin-right: 2rem;
     max-width:500px;
+    flex-direction: column;
+    position: relative;
     
     
     
 }
-.middle2-left>svg{
+.middle2-left>img{
     width:500px
     
+}
+#arrow{
+    float: right;
+    position: absolute;
+    transform: rotate(-80deg);
+    opacity: 0.5;
+    object-fit: cover;
+    object-position: center center;
+    width: fit-content;
+    bottom: -110px !important;
+    right: -46px;
 }
 .middle2-right{
     flex:1;
@@ -191,22 +217,50 @@ color: white !important;
 .head-text{
     letter-spacing:0.3rem
 }
-.middle2-right >h2>span{
-    color:#ffd803;
-    font-weight:600;
+.middle2-right >h1>span{
+    color:#ff3ac5b8;
+    
     font-size:3rem;
-    font-style: italic;
+    
+    font-family:Bradley Hand,cursive;
     
 
 }
 .middle2-right>button{
     width:110px;
     margin-top: 1rem;
-    background-color:#ffd803;
-    color:#0000009e;border-radius:5px;
+    background-color:#ff3ac5b8;
+    color:white;border-radius:5px;
     padding:0.5rem;
     border:none
 }
+.middle3{
+    display: flex;
+   flex-direction: column;
+    margin: 6rem auto;
+    padding: 3rem;
+    max-width: 2000px;
+    justify-content:center;
+    align-items:center;
+}
+.middle3-heading{
+    text-align: center;
+    line-height:50px
+}
+.middle3-heading h1{
+   font-weight: 600;
+}
+.middle3-earth{
+    width:100%;
+    text-align: center;
+    max-width: 400px;
+    
+}
+.middle3-earth>img{
+    width:100%;
+    max-width:700px
+}
+
 
 
 
@@ -214,15 +268,15 @@ color: white !important;
     display:flex;
     flex-direction:column;
     justify-content:center;align-items:center;
-    background-color:#ffd739;
+    background-color:#ff71d526;
     padding:2rem;
 }
 .contact-us h1{
-  font-size:3rem;
+  font-size:2.5rem;
   text-align: center;
 }
 .contact-us p{
-   font-size:2rem;
+   font-size:1.5rem;
    text-align: center;
 }
 .contact-form{
@@ -240,22 +294,44 @@ margin-bottom:2rem !important;
 max-width: 700px;
 margin:0 auto;
 
+
 }
 .form-group input{
     background-color:transparent !important;
 width:100%;height:100%;
-border:none;
-border-bottom:1px solid black;
 padding:2rem;
-color:white;;
+color:black !important;
+
+border: 2px solid white;
+border-radius: 4px;
+outline:0 !important;
+
+
 
 
 }
-#buttonsubmit{
+.form-group-button{
     all:unset;
-    font-weight: 700;
+    background-color:#ff3ac5b8;
+    padding:0.5rem ;
+    color :white;
+    border-radius: 4px;
+    float:left !important;
+
+
 
 }
+.form-group-button>input {
+   
+    background-color:transparent !important;
+    border:none !important;
+     color:white;
+     font-weight:100;
+     
+
+
+}
+
 
 @media screen and (max-width:1300px){
     .navbar{
@@ -283,9 +359,6 @@ color:white;;
         width: 150px;
         height: 75px;
     }
-    .middle-left h1 {
-        font-size: 3rem;
-    }
     .text {
         font-size: 1.5rem;
 
@@ -308,9 +381,7 @@ color:white;;
         margin: 0;
         margin-bottom: 2rem;
     }
-    .middle-left h1 {
-        font-size: 2rem;
-    }
+    
     .text{
         font-size: 1rem;
 
@@ -319,7 +390,12 @@ color:white;;
         font-size: 1.5rem;
         margin: 1rem 1rem 1rem 0!important;
    
-} }
+}
+.heading-h1
+{
+font-size:2rem 
+}
+ }
 @media screen and (max-width: 830px) {
     
     .middle-text{
@@ -331,9 +407,38 @@ color:white;;
     .navbar-left img{
         width: 100px;height: 50px;
     }
+    #arrow{
+        top: 60%;
+        right: -50px;
+        transform: scaleX(-1)
+    }
+    .middle-text{
+       
+        margin: 3rem auto ;
+        padding:1.5rem;
+        
+    }
+    .middle2{
+        margin: 3rem auto;
+        padding: 1.5rem;
+
+    }
+    .form-group input{
+        padding:1rem;
+        font-size:1rem;
+        
+        
+        }
+        .contact-us h1{
+            font-size:2rem;
+            
+          }
+          .contact-us p{
+             font-size:1rem;
+          }
     
 }
-@media screen and (max-width:500px){
+@media screen and (max-width:550px){
     .container-heading-middle h1 {
         font-size: 2.5rem;
     }
@@ -347,6 +452,18 @@ color:white;;
     }
     #svg{
         margin-top: 1rem;
+    }
+    .middle2-left>img{
+        width:400px
+        
+    }
+    #arrow{
+        width:120px;
+        right: -22px;
+        top:75%;
+    }
+    .form-group{
+        width:70%;
     }
     
 }
